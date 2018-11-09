@@ -1,0 +1,100 @@
+/*
+    Project 0
+    style.css
+*/
+
+body {
+    background-color:  #99ffff;
+    width: 60%; /* percentage */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em; /* numerical value */
+}
+
+/* Menu Style */
+.menu {
+    width: 60%; /* percentage */  
+    margin: 20px;
+    padding: 5px;
+
+    text-align: center;
+    display: block; 
+    margin-left: 20% ;
+}
+div a {
+    background-color: yellow;
+    color: blue;
+    margin: 20px;
+    padding: 10px;  
+    border: 3px solid black;
+ 
+}
+div a:hover {
+    background-color: orange;
+}
+
+
+h1 {
+    color: #ffcc00;
+    background-color: #02558B;
+    border: #ffcc00 5px solid;
+    border-bottom: 20px #ffcc00 double;
+    font-family: Helvetica, serif;
+    font-weight: bold;
+    /*margin-bottom: 10px;*/
+    margin: 50px;
+    padding: 5px;
+    text-align: center;
+}
+h2 {
+    
+    font-family: "Century Gothic";
+    color: #02558B;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+/* list style */
+#list {
+    width: 50%;
+    /*background-color: #ffff99;*/
+    background-color: yellow;
+    display: block; 
+    margin-left: 25% ;
+    border: 3px purple solid;
+}
+ul, ol {
+
+    color:purple;
+
+}
+ul li {
+    font-style: italic;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 30px;
+    font-weight: normal;
+}
+ul h2{
+    font-weight: bold;
+    color: purple;
+}
+
+/* table style */
+
+
+
+/* image style */
+img {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    border: #ffcc00 5px solid;
+}
