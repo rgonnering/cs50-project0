@@ -306,7 +306,8 @@ $ git push
 compile scss stylesheet
 -----------------------
 $ sass style.scss style.css
-
+Compare
+$ diff style.scss style.css
 
 
 
