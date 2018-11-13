@@ -1,128 +1,134 @@
 /*
     Project 0
-    style.css
+    style.scss
 */
-
+/* color variables */
 /* Bootstrap Overrides */
-.container { 
-}
-.navbar {
-}
 .navbar-light {
-    width: 70%; /* percentage */
-    margin-left: 20%;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
-.navbar-light  li {
-    background-color: yellow;
-    color: blue;
-    margin: 20px;
-    padding: 10px;  
-    border: 3px solid black;
-    font-size: 1.5em;
-} 
-nav  p {
-}
-.row div {
-    background-color: yellow;
-    margin-bottom: 20px;
-    padding: 10px;  
-    border: 3px solid black; 
-}
-body {
-    background-color:  #99ffff;
-    font-size: 2em; /* numerical value */
+  width: 70%;
+  /* percentage */
+  margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
+.navbar-light li {
+  background-color: yellow;
+  color: blue;
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid black;
+  font-size: 1.5em;
+}
+
+.row div {
+  background-color: yellow;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid black;
+}
+
+body {
+  background-color: #99ffff;
+  font-size: 2em;
+  /* numerical value */
+}
 
 /* Menu Style */
 nav a:hover {
-    background-color: orange;
+  background-color: orange;
 }
 
 h1 {
-    color: #ffcc00;
-    background-color: #02558B;
-    border: #ffcc00 5px solid;
-    border-bottom: 20px #ffcc00 double;
-    font-family: Helvetica, serif;
-    font-weight: bold;
-    margin-bottom: 50px;
-    padding: 5px;
-    text-align: center;
-    width: 50%;
-}
-h2 {
-    font-family: "Century Gothic";
-    color: #02558B;
-    margin-bottom: 20px;
-    padding: 5px;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-}
-h3 {
-    text-align: center;
-    color: blue;
-    font-weigth: bold;
-    padding: 10px;  
-    font-size: 1em;    
+  color: #ffcc00;
+  background-color: #02558B;
+  border: #ffcc00 5px solid;
+  border-bottom: 20px #ffcc00 double;
+  font-family: Helvetica, serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding: 5px;
+  text-align: center;
+  width: 50%;
 }
 
+h2 {
+  font-family: "Century Gothic";
+  color: #02558B;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: blue;
+  font-weigth: bold;
+  padding: 10px;
+  font-size: 1em;
+}
 
 /* list style */
 #list {
-    width: 50%;
-    background-color: yellow;
-    display: block; 
-    margin-left: 25% ;
-    border: 3px purple solid;
-}
-ul li {
-    font-style: italic;
-    margin: 10px;
-    padding: 5px;
-    padding-left: 30px;
-    color: #02558B;
-    font-weight: normal;
-}
-ul h2{
-    font-weight: bold;
-    color: blue;
+  width: 50%;
+  background-color: yellow;
+  display: block;
+  margin-left: 25%;
+  border: 3px purple solid;
 }
 
+ul li {
+  font-style: italic;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  color: #02558B;
+  font-weight: normal;
+}
+
+ul h2 {
+  font-weight: bold;
+  color: purple;
+}
 
 /* table style */
 table {
-    border: 1px solid black;
-    background-color: yellow;
-    width: 60%;
-    margin-left: 20%;
-    text-align: center;
-}
-th {
-    border: 1px solid black;
-}
-td {
-    border: 1px solid black;
-}
-#green {
-    background-color: green;
-}
-#blue {
-    background-color: blue;
-}
-#red {
-    background-color: red;
+  border: 1px solid black;
+  background-color: yellow;
+  width: 60%;
+  margin-left: 20%;
+  text-algin: center;
 }
 
+th {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+#green {
+  background-color: green;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#red {
+  background-color: red;
+}
 
 /* image style */
 img {
-    width: 100%;
-    padding: 5px;
-    background-color: yellow;
-    border: #ffcc00 5px solid;
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  border: #ffcc00 5px solid;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,8 @@ $background-site: #99ffff;
 $background-red: red;
 $background-green: green;
 $background-blue: blue;
+$background-yellow: yellow;
+$background-orange: orange;
 
 /* Bootstrap Overrides */
 .navbar-light {
@@ -17,17 +19,16 @@ $background-blue: blue;
     margin-bottom: 30px;
 }
 .navbar-light  li {
-    background-color: yellow;
+    background-color: $background-yellow;
     color: blue;
     margin: 20px;
     padding: 10px;  
     border: 3px solid black;
     font-size: 1.5em;
 } 
-nav  p {
-}
+
 .row div {
-    background-color: yellow;
+    background-color: $background-yellow;
     margin-bottom: 20px;
     padding: 10px;  
     border: 3px solid black; 
@@ -40,7 +41,7 @@ body {
 
 /* Menu Style */
 nav a:hover {
-    background-color: orange;
+    background-color: $background-orange;
 }
 
 h1 {
@@ -67,7 +68,7 @@ h2 {
 }
 h3 {
     text-align: center;
-    color: blue;
+    color: $background-blue;
     font-weigth: bold;
     padding: 10px;  
     font-size: 1em;    
@@ -77,7 +78,7 @@ h3 {
 /* list style */
 #list {
     width: 50%;
-    background-color: yellow;
+    background-color: $background-yellow;
     display: block; 
     margin-left: 25% ;
     border: 3px purple solid;
@@ -99,7 +100,7 @@ ul h2{
 /* table style */
 table {
     border: 1px solid black;
-    background-color: yellow;
+    background-color: $background-yellow;
     width: 60%;
     margin-left: 20%;
     text-algin: center;
@@ -111,13 +112,13 @@ td {
     border: 1px solid black;
 }
 #green {
-    background-color: green;
+    background-color: $background-green;
 }
 #blue {
-    background-color: blue;
+    background-color: $background-blue;
 }
 #red {
-    background-color: red;
+    background-color: $background-red;
 }
 
 

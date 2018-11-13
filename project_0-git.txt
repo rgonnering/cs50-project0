@@ -237,7 +237,7 @@ $ git merge bootstrap
      7 files changed, 610 insertions(+), 65 deletions(-)
 $ git push
     Username for 'https://github.com': rgonnering
-    Password for 'https://rgonnering@github.com':
+    Password for 'https://rgonnering@github.com': D1
     Counting objects: 12, done.
     Delta compression using up to 8 threads.
     Compressing objects: 100% (12/12), done.
@@ -247,20 +247,65 @@ $ git push
     To https://github.com/rgonnering/cs50-project0.git
        a759842..f59679b  master -> master
 
+verify changes on GitHub
+------------------------
+goto
+    https://github.com/rgonnering/cs50-project0
+    check files to make sure they are up to date.
+    
+publish changes to GitHub Pages
+-------------------------------
+goto
+    https://github.com/rgonnering/cs50-project0
+|Settings - upper right menu
+Scroll Down to GitHub Pages
+    GitHub Pages is designed to host your personal, organization, 
+    or project pages from a GitHub repository.
+    Source
+        GitHub Pages is currently disabled. Select a source below 
+        to enable GitHub Pages for this repository.
+            master branch
+            Save
+    Theme Chooser
+    Select a theme to publish your site with a Jekyll theme using the master branch. Learn more.
+*********************************************************
+    Your site is ready to be published at 
+        https://rgonnering.github.io/cs50-project0/
+*********************************************************
 
+Add scss stylesheet
+-------------------
+$ git add .
+$ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+            modified:   image.html
+            modified:   index.html
+            modified:   project_0-git.txt
+            modified:   style.css
+            new file:   style.scss
+            modified:   table.html
+$ git commit -m "Added scss stylesheet"
+    [master d7f684e] Added scss stylesheet
+     6 files changed, 183 insertions(+), 54 deletions(-)
+     create mode 100644 style.scss
+$ git push
+    Username for 'https://github.com': rgonnering
+    Password for 'https://rgonnering@github.com': D1
+    Counting objects: 8, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (8/8), done.
+    Writing objects: 100% (8/8), 2.13 KiB | 2.13 MiB/s, done.
+    Total 8 (delta 5), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+    To https://github.com/rgonnering/cs50-project0.git
+       f59679b..d7f684e  master -> master
 
-
-
-
-
-
-
-
-
-
-
-
-
+compile scss stylesheet
+-----------------------
+$ sass style.scss style.css
 
 
 
