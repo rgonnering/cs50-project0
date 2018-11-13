@@ -209,12 +209,43 @@ $ git help merge
                         /         \
                    D---E---F---G---H master
 
-$
-
-
-
-
-
+$ git commit -m "more bootstrap branch changes"
+    On branch bootstrap
+    Changes not staged for commit:
+            modified:   project_0-git.txt
+    no changes added to commit
+$ git add project_0-git.txt
+$ git commit -m "more bootstrap branch changes"
+    [bootstrap f59679b] more bootstrap branch changes
+     1 file changed, 116 insertions(+)
+$ git checkout master
+    Switched to branch 'master'
+    Your branch is up to date with 'origin/master'.
+$ git branch
+      bootstrap
+    * master
+$ git merge bootstrap
+    Updating a759842..f59679b
+    Fast-forward
+     README.md         | 189 ++++++++++++++++++++++++++++++++++++++
+     image.html        |  38 ++++++++++++++++++++++++-----------
+     index.html        |  69 ++++++++++++++++++++++++++++++++++++++
+     list.html         |  95 ++++++++++++++++++++++++++++++++++++++
+     project_0-git.txt | 170 +++++++++++++++++++++++++++++++++++++
+     style.css         |  75 +++++++++++++++++++++++++++++++++++++
+     table.html        |  39 ++++++++++++++++++++++++------------
+     7 files changed, 610 insertions(+), 65 deletions(-)
+$ git push
+    Username for 'https://github.com': rgonnering
+    Password for 'https://rgonnering@github.com':
+    Counting objects: 12, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (12/12), done.
+    Writing objects: 100% (12/12), 8.31 KiB | 4.15 MiB/s, done.
+    Total 12 (delta 6), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+    To https://github.com/rgonnering/cs50-project0.git
+       a759842..f59679b  master -> master
 
 
 

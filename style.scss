@@ -1,13 +1,15 @@
 /*
     Project 0
-    style.css
+    style.scss
 */
 
+/* color variables */
+$background-site: #99ffff;
+$background-red: red;
+$background-green: green;
+$background-blue: blue;
+
 /* Bootstrap Overrides */
-.container { 
-}
-.navbar {
-}
 .navbar-light {
     width: 70%; /* percentage */
     margin-left: 20%;
@@ -31,7 +33,7 @@ nav  p {
     border: 3px solid black; 
 }
 body {
-    background-color:  #99ffff;
+    background-color:  $background-site;
     font-size: 2em; /* numerical value */
 }
 
@@ -90,7 +92,7 @@ ul li {
 }
 ul h2{
     font-weight: bold;
-    color: blue;
+    color: purple;
 }
 
 
@@ -100,7 +102,7 @@ table {
     background-color: yellow;
     width: 60%;
     margin-left: 20%;
-    text-align: center;
+    text-algin: center;
 }
 th {
     border: 1px solid black;
@@ -123,6 +125,6 @@ td {
 img {
     width: 100%;
     padding: 5px;
-    background-color: yellow;
+    background-color: white;
     border: #ffcc00 5px solid;
 }
