@@ -3,11 +3,45 @@
     style.css
 */
 
+/* Bootstrap Overrides */
+.container {
+    background-color:  #99ffff;
+}
+.navbar {
+
+}
+.navbar-light {
+    background-color:  #99ffff;
+    margin: 20px;
+    padding: 10px;  
+    width: 70%; /* percentage */
+    margin-left: 20%;
+    margin-right: auto;
+}
+.navbar-light  li {
+    background-color: yellow;
+    color: blue;
+    margin: 20px;
+    padding: 10px;  
+    border: 3px solid black;
+    font-size: 1.5em;
+} 
+nav  p {
+    color: blue;
+    font-weigth: bold;
+    padding: 10px;  
+    font-size: 1em;
+}
+.row div {
+    background-color: yellow;
+    margin-bottom: 20px;
+    padding: 10px;  
+    border: 3px solid black; 
+}
+
 body {
     background-color:  #99ffff;
-    width: 60%; /* percentage */
-    margin-left: auto;
-    margin-right: auto;
+
     font-size: 2em; /* numerical value */
 }
 
@@ -42,9 +76,10 @@ h1 {
     font-family: Helvetica, serif;
     font-weight: bold;
     /*margin-bottom: 10px;*/
-    margin: 50px;
+    margin-bottom: 50px;
     padding: 5px;
     text-align: center;
+    width: 50%;
 }
 h2 {
     
@@ -57,8 +92,15 @@ h2 {
     font-style: italic;
     text-align: center;
 }
-p{
+h3 {
     text-align: center;
+    color: blue;
+    font-weigth: bold;
+    padding: 10px;  
+    font-size: 1em;    
+}
+p {
+
 }
 
 /* list style */
@@ -88,8 +130,29 @@ ul h2{
 }
 
 /* table style */
+table {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 60%;
+    margin-left: 20%;
+    text-algin: center;
+}
+th {
+    border: 1px solid black;
 
-
+}
+td {
+    border: 1px solid black;
+}
+#green {
+    background-color: green;
+}
+#blue {
+    background-color: blue;
+}
+#red {
+    background-color: red;
+}
 
 /* image style */
 img {

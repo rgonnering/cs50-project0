@@ -1,6 +1,6 @@
 project_0-git.txt
 ==============================
-
+Web Programming with Python and JavaScript
 
 Project 0: Homepage
 Objectives
@@ -33,11 +33,11 @@ to create a new index.html file in your repository. Open the file with your favo
 </html>
 
 Then, save your index.html file.
-Requirements
 
+Requirements
+============
 Alright, now it’s time to make your website your own. Design a personal webpage about yourself, one of your interests, or any other topic of your choice. The subject matter, look and feel, and design of the site are entirely up to you, subject to the following 
-requirements:
--------------
+
 * Your website must contain at least four different .html pages, and it should be possible to get from any page on your website to any other page by following one or more hyperlinks.
 * Your website must include at least 
     one list (ordered or unordered), 
@@ -69,11 +69,57 @@ How to Submit
     Submit this form.
 
 
+============================================================
 
+$ git add list.html
+$ git status
+    On branch bootstrap
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+            modified:   index.html
+            modified:   list.html
+            modified:   project_0-git.txt
+            modified:   style.css
+            modified:   table.html
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+            modified:   README.md
+            modified:   style.css
 
+Edit image.html
+    <img src="kittewake.JPG" alt="USS Kittewake" />
 
-
-
+$ git add image.html
+$ git status
+    On branch bootstrap
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+            modified:   image.html
+            modified:   index.html
+            modified:   list.html
+            modified:   project_0-git.txt
+            modified:   style.css
+            modified:   table.html
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+            modified:   README.md
+            modified:   index.html
+            modified:   project_0-git.txt
+            modified:   style.css
+$ git add .
+$ git status
+    On branch bootstrap
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+            modified:   README.md
+            modified:   image.html
+            modified:   index.html
+            modified:   list.html
+            modified:   project_0-git.txt
+            modified:   style.css
+            modified:   table.html
 
 
 
