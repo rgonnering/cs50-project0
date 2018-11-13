@@ -121,6 +121,122 @@ $ git status
             modified:   style.css
             modified:   table.html
 
+Commit final changes to bootstrap branch
+----------------------------------------
+$ git branch
+* bootstrap
+  master
+$ git status
+    On branch bootstrap
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+            modified:   README.md
+            modified:   image.html
+            modified:   index.html
+            modified:   list.html
+            modified:   project_0-git.txt
+            modified:   style.css
+            modified:   table.html
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+            modified:   README.md
+            modified:   index.html
+            modified:   list.html
+            modified:   project_0-git.txt
+$ git add .
+$ git status
+    On branch bootstrap
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+            modified:   README.md
+            modified:   image.html
+            modified:   index.html
+            modified:   list.html
+            modified:   project_0-git.txt
+            modified:   style.css
+            modified:   table.html
+$ git commit -m "Save bootstrap branch features"
+    [bootstrap 27ea994] Save bootstrap branch features
+     7 files changed, 532 insertions(+), 103 deletions(-)
+     rewrite image.html (71%)
+     rewrite index.html (64%)
+     rewrite list.html (81%)
+
+$ git help
+* These are common Git commands used in various situations:
+* start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an 
+                existing one
+* work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+* examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+* grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG 
+* collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository 
+                or a local branch
+   push       Update remote refs along with associated objects
+
+$ git help merge
+    git-merge - Join two or more development histories together
+    Assume the following history exists and the current branch is "master":
+                         A---B---C topic
+                        /
+                   D---E---F---G master
+    Then "git merge topic" will replay the changes made on the topic branch
+    since it diverged from master (i.e., E) until its current commit (C) on
+    top of master, and record the result in a new commit along with the
+    names of the two parent commits and a log message from the user
+    describing the changes.
+                         A---B---C topic
+                        /         \
+                   D---E---F---G---H master
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
