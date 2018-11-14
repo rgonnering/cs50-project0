@@ -2,16 +2,50 @@
     Project 0
     style.scss
 */
-/* color variables */
+/* initialize color variables */
+/* site-wide properties */
+body {
+  background-color: #99ffff;
+  font-size: 2em;
+}
+
+h3, h2, h1 {
+  font-family: Helvetica, serif;
+  font-weight: bold;
+  padding: 5px;
+}
+
+h1 {
+  color: #ffcc00;
+  background-color: #02558B;
+  border: #ffcc00 5px solid;
+  border-bottom: 20px #ffcc00 double;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 50%;
+}
+
+h2 {
+  color: #02558B;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: blue;
+  font-size: 1em;
+}
+
 /* Bootstrap Overrides */
 .navbar-light {
   width: 70%;
-  /* percentage */
   margin-left: 20%;
   margin-right: auto;
   margin-bottom: 30px;
 }
-
 .navbar-light li {
   background-color: yellow;
   color: blue;
@@ -28,47 +62,9 @@
   border: 3px solid black;
 }
 
-body {
-  background-color: #99ffff;
-  font-size: 2em;
-  /* numerical value */
-}
-
 /* Menu Style */
 nav a:hover {
   background-color: orange;
-}
-
-h1 {
-  color: #ffcc00;
-  background-color: #02558B;
-  border: #ffcc00 5px solid;
-  border-bottom: 20px #ffcc00 double;
-  font-family: Helvetica, serif;
-  font-weight: bold;
-  margin-bottom: 50px;
-  padding: 5px;
-  text-align: center;
-  width: 50%;
-}
-
-h2 {
-  font-family: "Century Gothic";
-  color: #02558B;
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-  color: blue;
-  font-weigth: bold;
-  padding: 10px;
-  font-size: 1em;
 }
 
 /* list style */
@@ -100,7 +96,7 @@ table {
   background-color: yellow;
   width: 60%;
   margin-left: 20%;
-  text-algin: center;
+  text-align: center;
 }
 
 th {
@@ -111,6 +107,10 @@ td {
   border: 1px solid black;
 }
 
+#red {
+  background-color: red;
+}
+
 #green {
   background-color: green;
 }
@@ -119,15 +119,11 @@ td {
   background-color: blue;
 }
 
-#red {
-  background-color: red;
-}
-
 /* image style */
 img {
   width: 100%;
   padding: 5px;
-  background-color: white;
+  background-color: yellow;
   border: #ffcc00 5px solid;
 }
 

@@ -57,16 +57,90 @@ Note that not all of the above requirements are covered in Lecture 0, some will 
 
 How to Submit
 -------------
-    Visit cs50.me, log in with your GitHub account, and click Authorize submit50. You should receive two emails from GitHub inviting you to join CS50’s “organizations” on GitHub. Click the button in those emails to accept both of the invitations.
+    Visit cs50.me, log in with your GitHub account, and 
+    click Authorize submit50. 
+        Authorize CS50.me
+        Please accept the following invitation(s) to authorize CS50.me
+            https://github.com/submit50/rgonnering
+                bot50 invited you to collaborate
+                Accept Invitation
+            https://github.com/check50/rgonnering
+                bot50 invited you to collaborate
+                Accept Invitation           
+    
+    You should receive two emails from GitHub inviting you to join 
+    CS50’s “organizations” on GitHub. 
+    
+    Click the button in those emails to accept both of the invitations.
+    
     Install Git and, optionally, install submit50.
 
-    Using Git, push your work to https://github.com/submit50/USERNAME.git, where USERNAME is your GitHub username, on a branch called cs50/web/2018/x/projects/0 or, if you’ve installed submit50, execute
+    Using Git, 
+        push your work to https://github.com/submit50/rgonnering.git, 
+            where rgonnering is your GitHub username, 
+            on a branch called cs50/web/2018/x/projects/0 
+                or, 
+            if you’ve installed submit50, execute
+                submit50 cs50/web/2018/x/projects/0
 
-    submit50 cs50/web/2018/x/projects/0
-
-    instead.
-    Record a 1- to 5-minute screencast in which you demonstrate your app’s functionality and/or walk viewers through your code. Upload that video to YouTube (as unlisted or public, but not private) or somewhere else.
+    Record a 1- to 5-minute screencast in which you demonstrate your 
+    app’s functionality and/or walk viewers through your code. 
+    
+    Upload that video to YouTube (as unlisted or public, but not private)
+    or somewhere else.
+    
     Submit this form.
+https://courses.edx.org/oauth2/authorize?scope=profile%20email&state=ece9d6bb-ee48-4242-b6a5-dcaa00bcf11c&response_type=code&redirect_uri=https%3A%2F%2Fid.cs50.net%2Fauth%2Fedx%2Fcallback&client_id=yokrZBGYP41U6cLm1hK4vWHOT4Zq7rSu9v0kgW92&from=edX
+    Authorize cs50?
+        The above application requests the following permissions 
+        from your account:
+            Know your name and username
+            Know your email address
+    Allow
+
+https://docs.google.com/forms/d/e/1FAIpQLSf6Myrt1xQFsw5PQQNgSlh5Al4X2NOA5UMgSfZTGiV_EFVuKw/viewform?emailAddress=roger.gonnering%40gmail.com&entry.1795705744=rgonnering&entry.1799093588=Roger+Gonnering
+
+====================
+Hey rgonnering!
+---------------
+A third-party OAuth Application (CS50.me) with user:email scope was recently authorized to access your account.
+
+For more information visit: 
+https://github.com/settings/connections/applications/4641d3506c478b0419d5 
+
+
+To see this and other security events for your account, visit 
+    https://github.com/settings/security
+
+If you run into problems, please contact support by visiting 
+    https://github.com/contact
+
+We’re just writing to let you know that you’ve automatically started watching several repositories on GitHub.
+
+You’ll receive notifications for all issues, pull requests, and comments that happen inside the repository. If you would like to stop watching any of these repositories, you can manage your settings here:
+  https://github.com/submit50/rgonnering/subscription
+  https://github.com/check50/rgonnering/subscription
+You automatically watched these repositories because you’ve been given access to them.
+====================
+
+submit:
+https://github.com/submit50/rgonnering
+    Code
+        Upload Files
+            Choose your files
+                image.html 	
+                index.html
+                kittewake.JPG
+                list.html 	
+                README.md 	
+                style.css.map 	
+                style.scss 	
+                table.html
+        Commit changes "Submission of Project 0"
+    Branch
+        cs50/web/2018/x/projects/0 
+            Create Branch
+            
 
 
 ============================================================
@@ -310,9 +384,43 @@ Compare
 $ diff style.scss style.css
 
 
+looking at earlier versions
+---------------------------
+$ git checkout bootstrap
+    Switched to branch 'bootstrap'
+$ git reflog
+    f59679b (HEAD -> bootstrap) HEAD@{0}: checkout: moving from master 
+                    to bootstrap
+    8b5eebc (origin/master, master) HEAD@{1}: commit: Updated README.md
+    9628fdb HEAD@{2}: commit: Updated scss stylesheet
+    d7f684e HEAD@{3}: commit: Added scss stylesheet
+    f59679b (HEAD -> bootstrap) HEAD@{4}: merge bootstrap: Fast-forward
+    a759842 HEAD@{5}: checkout: moving from bootstrap to master
+    f59679b (HEAD -> bootstrap) HEAD@{6}: commit: more bootstrap 
+                    branch changes
+    27ea994 HEAD@{7}: commit: Save bootstrap branch features
+    a759842 HEAD@{8}: checkout: moving from master to bootstrap
+    a759842 HEAD@{9}: commit: Changed title for index.html and image.html
+    f1104d9 HEAD@{10}: commit (initial): Initial Commit
 
-
-
+$ git checkout master
+    Switched to branch 'master'
+    Your branch is up to date with 'origin/master'.
+$ git reflog
+    8b5eebc (HEAD -> master, origin/master) HEAD@{0}: checkout: moving 
+                    from bootstrap to master
+    f59679b (bootstrap) HEAD@{1}: checkout: moving from master to bootstrap
+    8b5eebc (HEAD -> master, origin/master) HEAD@{2}: commit: Updated
+                     README.md
+    9628fdb HEAD@{3}: commit: Updated scss stylesheet
+    d7f684e HEAD@{4}: commit: Added scss stylesheet
+    f59679b (bootstrap) HEAD@{5}: merge bootstrap: Fast-forward
+    a759842 HEAD@{6}: checkout: moving from bootstrap to master
+    f59679b (bootstrap) HEAD@{7}: commit: more bootstrap branch changes
+    27ea994 HEAD@{8}: commit: Save bootstrap branch features
+    a759842 HEAD@{9}: checkout: moving from master to bootstrap
+    a759842 HEAD@{10}: commit: Changed title for index.html and image.html
+    f1104d9 HEAD@{11}: commit (initial): Initial Commit
 
 
 

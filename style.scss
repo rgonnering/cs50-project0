@@ -3,7 +3,7 @@
     style.scss
 */
 
-/* color variables */
+/* initialize color variables */
 $background-site: #99ffff;
 $background-red: red;
 $background-green: green;
@@ -11,21 +11,57 @@ $background-blue: blue;
 $background-yellow: yellow;
 $background-orange: orange;
 
+/* site-wide properties */
+body {
+    background-color:  $background-site;
+    font-size: 2em; 
+}
+%heading-shared {
+    font-family: Helvetica, serif;
+    font-weight: bold;
+    padding: 5px;
+}
+h1 {
+    @extend %heading-shared;
+    color: #ffcc00;
+    background-color: #02558B;
+    border: #ffcc00 5px solid;
+    border-bottom: 20px #ffcc00 double;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 50%;
+}
+h2 {
+    @extend %heading-shared;
+    color: #02558B;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+}
+h3 {
+    @extend %heading-shared;
+    text-align: center;
+    color: $background-blue;
+    font-size: 1em;    
+}
+
+
 /* Bootstrap Overrides */
 .navbar-light {
-    width: 70%; /* percentage */
+    width: 70%; 
     margin-left: 20%;
     margin-right: auto;
     margin-bottom: 30px;
+    li {
+        background-color: $background-yellow;
+        color: blue;
+        margin: 20px;
+        padding: 10px;  
+        border: 3px solid black;
+        font-size: 1.5em;
+    } 
 }
-.navbar-light  li {
-    background-color: $background-yellow;
-    color: blue;
-    margin: 20px;
-    padding: 10px;  
-    border: 3px solid black;
-    font-size: 1.5em;
-} 
 
 .row div {
     background-color: $background-yellow;
@@ -33,45 +69,9 @@ $background-orange: orange;
     padding: 10px;  
     border: 3px solid black; 
 }
-body {
-    background-color:  $background-site;
-    font-size: 2em; /* numerical value */
-}
-
-
 /* Menu Style */
 nav a:hover {
     background-color: $background-orange;
-}
-
-h1 {
-    color: #ffcc00;
-    background-color: #02558B;
-    border: #ffcc00 5px solid;
-    border-bottom: 20px #ffcc00 double;
-    font-family: Helvetica, serif;
-    font-weight: bold;
-    margin-bottom: 50px;
-    padding: 5px;
-    text-align: center;
-    width: 50%;
-}
-h2 {
-    font-family: "Century Gothic";
-    color: #02558B;
-    margin-bottom: 20px;
-    padding: 5px;
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-}
-h3 {
-    text-align: center;
-    color: $background-blue;
-    font-weigth: bold;
-    padding: 10px;  
-    font-size: 1em;    
 }
 
 
@@ -103,7 +103,7 @@ table {
     background-color: $background-yellow;
     width: 60%;
     margin-left: 20%;
-    text-algin: center;
+    text-align: center;
 }
 th {
     border: 1px solid black;
@@ -111,21 +111,22 @@ th {
 td {
     border: 1px solid black;
 }
+#red {
+    background-color: $background-red;
+}
 #green {
     background-color: $background-green;
 }
 #blue {
     background-color: $background-blue;
 }
-#red {
-    background-color: $background-red;
-}
+
 
 
 /* image style */
 img {
     width: 100%;
     padding: 5px;
-    background-color: white;
+    background-color: yellow;
     border: #ffcc00 5px solid;
 }
